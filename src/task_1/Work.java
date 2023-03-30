@@ -6,7 +6,6 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Work {
-
     public List<String> createList()
     {
         List<String> names= new ArrayList<>();
