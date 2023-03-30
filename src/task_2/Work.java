@@ -25,7 +25,7 @@ public class Work {
     {
         Stream<String> streamOfNames = names.stream()
                 .map(String::toUpperCase)
-                .sorted(Comparator.reverseOrder()); // (o1,o2) -> o2.compareTo(o1)
+                .sorted(Comparator.reverseOrder()); //(o1,o2) -> o2.compareTo(o1)
         List<String> result = streamOfNames.collect(Collectors.toList());
         System.out.println(result);
     }
