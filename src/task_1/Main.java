@@ -7,6 +7,9 @@ public class Main {
    лише з тими іменами, що стоять під непарним індексом
    (1, 3 тощо)*/
     public static void main(String[] args) {
-
+        Work work = new Work();
+        String result = work.addNumberToItemInList(work.createList());
+        System.out.println(result);
     }
+
 }
