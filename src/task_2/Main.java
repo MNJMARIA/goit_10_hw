@@ -6,6 +6,7 @@ public class Main {
     Повертає список цих рядків у верхньому регістрі,
     і відсортованих за спаданням (від Z до A).*/
     public static void main(String[] args) {
-
+      Work work = new Work();
+      work.reverseSortList(work.createdList);
     }
 }
