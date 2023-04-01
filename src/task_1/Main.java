@@ -8,8 +8,7 @@ public class Main {
    (1, 3 тощо)*/
     public static void main(String[] args) {
         Work work = new Work();
-        String result = work.addNumberToItemInList(work.createList());//TODO public змінну List<String> createdList = createList();
-        //TODO createList() зробити приватним
+        String result = work.addNumberToItemInList(work.createList());
         System.out.println(result);
     }
 
