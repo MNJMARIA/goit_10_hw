@@ -34,4 +34,14 @@ public class Main {
         }
         return resultList.stream();
     }
+    /*як варіант:
+    public static <T> Stream<T> zip(Stream<T> first, Stream<T> second){
+        Iterator<T> firstIter = first.iterator();
+        Iterator<T> secondIter = second.iterator();
+        Stream.Builder<T> builder = Stream.builder();
+        while (firstIter.hasNext() && secondIter.hasNext()) {
+            builder.add(firstIter.next());
+            builder.add(secondIter.next());}
+        return builder.build();
+    }*/
 }
