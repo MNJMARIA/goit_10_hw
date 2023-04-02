@@ -21,7 +21,7 @@ public class Work {
     public String addNumberToItemInList(List<String> names)
     {
         return IntStream.range(0, names.size())
-                .filter(i -> i%2 == 0) // бо беремо індекси( і=0(парне), але елемент під порядковим номером 1)
+                .filter(i -> (i+1)%2 == 0) // бо беремо індекси( і=0(парне), але елемент під порядковим номером 1)
                 .mapToObj(i -> (i+1) + ". " + names.get(i))
                 .collect(Collectors.joining(", "));
     }
