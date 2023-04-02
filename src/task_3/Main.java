@@ -20,4 +20,13 @@ public class Main {
 
         System.out.println(result);
     }
+
+    /*як варіант:
+    public String sortNumbers(String[] numbers) {
+        return Arrays.stream(numbers)
+                .map(x -> Arrays.asList(x.split(", ")))
+                .flatMap(Collection::stream)
+                .sorted()
+                .collect(Collectors.joining(", "));
+    }*/
 }
