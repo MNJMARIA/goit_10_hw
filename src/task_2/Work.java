@@ -3,8 +3,6 @@ package task_2;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Work {
     public List<String> createdList = createList();
@@ -21,12 +19,11 @@ public class Work {
 
         return names;
     }
-    public void reverseSortList(List<String> names)
+    public List<String> reverseSortList(List<String> names)
     {
-        Stream<String> streamOfNames = names.stream()
+        return names.stream()
                 .map(String::toUpperCase)
-                .sorted(Comparator.reverseOrder()); //(o1,o2) -> o2.compareTo(o1)
-        List<String> result = streamOfNames.collect(Collectors.toList());
-        System.out.println(result);
+                .sorted(Comparator.reverseOrder())
+                .toList();
     }
 }

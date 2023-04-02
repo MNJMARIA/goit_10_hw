@@ -7,6 +7,6 @@ public class Main {
     і відсортованих за спаданням (від Z до A).*/
     public static void main(String[] args) {
       Work work = new Work();
-      work.reverseSortList(work.createdList);
+      System.out.println(work.reverseSortList(work.createdList));
     }
 }
